@@ -1,0 +1,10 @@
+<div class="container formArea">
+  
+    <mat-form-field>
+        <mat-label>Create task</mat-label>
+        <input matInput [(ngModel)]="newTask" placeholder="add task..">
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="addTask()">Primary</button>
+    <app-tasks-list [tasks]="tasks"></app-tasks-list>
+  
+</div>
